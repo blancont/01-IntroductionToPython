@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -38,7 +38,7 @@ jane.pen = rg.Pen('green', 2)
 radius = 50
 side = 20
 
-for k in range(20):
+for k in range(10):
     john.draw_circle(radius)
     radius = radius - 5
     jane.draw_regular_polygon(side, radius)
