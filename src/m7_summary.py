@@ -50,7 +50,7 @@ turt.speed = 10
 turt.left(90)
 turt.forward(200)
 turt.pen_up()
-turt.go_to()
+turt.go_to(rg.Point(100, -40))
 turt.pen_down()
 turt.pen = rg.Pen('green', 10)
 turt.backward(150)
