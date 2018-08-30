@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Nathaniel Blanco.
 """
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
@@ -27,3 +27,19 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 ###############################################################################
+import rosegraphics as rg
+
+john = rg.SimpleTurtle()
+jane = rg.SimpleTurtle()
+
+john.pen = rg.Pen('yellow', 1)
+jane.pen = rg.Pen('green', 2)
+
+radius = 50
+side = 20
+
+for k in range(20):
+    john.draw_circle(radius)
+    radius = radius - 5
+    jane.draw_regular_polygon(side, radius)
+    side = side - 2
